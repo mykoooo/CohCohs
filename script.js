@@ -130,12 +130,12 @@ function updateCartDisplay() {
 }
 
 document.getElementById('checkout-button').addEventListener('click', () => {
+    var orderForm = document.getElementById("order-form");
     if (cart.length === 0) {
+        orderForm.setAttribute("onsubmit", "return false")
         alert("Your cart is empty!");
     } else {
-        cart.length = 0;
-
-        window.location.href = "checkout.html";
+        orderForm.setAttribute("onsubmit", "")
     }
 });
 
