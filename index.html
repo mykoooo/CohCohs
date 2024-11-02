@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CohCoh's</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="home" class="section-one snow-bg">
+        <div class="content">
+            <h1>Christmas</h1>
+            <h1>SALE</h1>
+            <img src="images/divider_white.png" alt="" class="divider">
+            <h2>BUY ATLEAST 2 ITEMS AND GET</h2>
+            <h2>20% OFF</h2>
+            <img src="images/divider_white.png" alt="" class="divider">
+            <a href="#hot-offer">LEARN MORE</a>
+            <img src="images/icon.png" alt="" class="bell">  
+        </div>
+        <div class="reindeers">
+            <div>
+                <img src="images/pic_01.png" alt="">
+            </div>
+            <div>
+                <img src="images/pic_02.png" alt="">
+            </div>
+        </div>
+    </section>
+    <nav id="navbar">
+        <a href="#home"><img src="images/Logo-1.png" alt=""></a>
+        <div>
+            <a href="#hot-offer">Hot Offer</a>
+            <a href="#about-offer">About Offer</a>
+            <a href="#contacts">Contacts</a>
+            <div id="cart" >
+                <svg fill="#EAF8F9" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="-225.72 -225.72 1354.30 1354.30" xml:space="preserve" stroke="#EAF8F9"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-225.72" y="-225.72" width="1354.30" height="1354.30" rx="677.15" fill="#AD0101" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.8057200000000002"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z"></path> <path d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717 c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744 c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742 C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744 c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742 S619.162,694.432,619.162,716.897z"></path> </g> </g> </g></svg>
+            </div>        
+        </div>
+    </nav>
+    <div class="modal" id="cart-modal">
+        <div id="cart-dropdown" class="modal-content">
+            <h4>Order Summary</h4>
+            <table id="cart-items-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-list">
+                    <tr><td></td><td><td></td><td></td></td></tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Discount:</td>
+                        <td id="discount-amount">₱0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total Price:</td>
+                        <td id="total-price">₱0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <form action="" onsubmit="return false">
+                <input type="text" placeholder="Enter Name" required>
+                <input type="text" placeholder="Enter Address" required>
+                <input type="tel" placeholder="Enter Contact No." required>
+                <input id="checkout-button" type="submit" value="Checkout">
+            </form>
+        </div>
+    </div>
+    <section id="hot-offer" class="section-two">
+        <div class="content">
+            <h1>OUT HOT OFFER</h1>
+            <img src="images/divider_green_s.png" alt="" class="divider">
+            <p>Check out our deals on limited products and make your loved ones happy!</p>
+            <div class="products">
+                <div>
+                    <img src="images/product_01_thumb.png" alt="" class="open-modal" data-modal="product-1">
+                    <p>iPhone 5C 16GB</p>
+                    <h2>₱4,999</h2>
+                    <button class="open-modal"  data-modal="product-1">Show More</button>
+                </div>
+                <div>
+                    <img src="images/product_02_thumb.png" alt="" class="open-modal" data-modal="product-3">
+                    <p>MACBOOK PRO 13'</p>
+                    <h2>₱36,999</h2>
+                    <button class="open-modal" data-modal="product-3">Show More</button>
+                </div>
+                <div>
+                    <img src="images/product_03_thumb.png" alt="" class="open-modal" data-modal="product-2">
+                    <p>IMAC 27'</p>
+                    <h2>₱49,999</h2>
+                    <button class="open-modal" data-modal="product-2">Show More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-offer" class="section-three snow-bg">
+        <span class="clouds"><img src="images/section_footer.png" alt=""></span>
+        <div class="content">
+            <h1>PROMO VIDEO</h1>
+            <img src="images/divider_white.png" alt="" class="divider">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae nesciunt, dolor, suscipit recusandae eos.</p>
+            <iframe width="1212" height="682" src="https://www.youtube.com/embed/KOyebqPhNL8" title="Get Ready for Christmas 2024 at Home Bargains – What&#39;s New Inside [4K]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" onload="resizeIframe(this)" allowfullscreen></iframe>               
+        </div>
+    </section>
+    <div id="product-1" class="modal">
+        <div class="product modal-content">
+            <div class="content">
+                <span class="close-modal" data-modal="product-1">X</span>
+                <h1>iPhone 5C (16GB)</h1>
+                <img src="images/divider_green.png" alt="" class="divider">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="single-item">
+                    <div><img src="images/product_01_preview_01.jpg" alt="" class="product-img"></div>
+                    <div><img src="images/product_01_preview_02.jpg" alt="" class="product-img"></div>
+                    <div><img src="images/product_01_preview_03.jpg" alt="" class="product-img"></div>
+                </div>
+                <div>
+                    <div class="device">
+                        <h3>Specifications:</h3>
+                        <ul>
+                            <li><strong>Model:</strong> iPhone 5C</li>
+                            <li><strong>Storage Capacity:</strong> 16 GB</li>
+                            <li><strong>Display:</strong> 4.0 inches, Retina display</li>
+                            <li><strong>Resolution:</strong> 640 x 1136 pixels</li>
+                            <li><strong>Processor:</strong> Apple A6 chip</li>
+                            <li><strong>Rear Camera:</strong> 8 MP, f/2.4, autofocus, LED flash</li>
+                            <li><strong>Front Camera:</strong> 1.2 MP, f/2.4</li>
+                            <li><strong>Operating System:</strong> iOS (upgradable)</li>
+                            <li><strong>Battery:</strong> Non-removable Li-Po 1510 mAh</li>
+                            <li><strong>Connectivity:</strong> Wi-Fi, Bluetooth 4.0, Cellular (2G, 3G, 4G LTE)</li>
+                            <li><strong>Dimensions:</strong> 124.4 x 59.2 x 9.0 mm</li>
+                            <li><strong>Weight:</strong> 132 grams</li>
+                            <li><strong>Colors Available:</strong> Green, Blue, Pink, Yellow, White</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>₱4,999</h2>
+                        <button class="buynow" data-product="iPhone 5C 16GB" data-price="4999" data-qty="product-1-qty">BUY NOW</button>
+                        <input type="number" id="product-1-qty" value="1" max="3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="product-2" class="modal">
+        <div id="home" class="product modal-content">
+            <div class="content">
+                <span class="close-modal" data-modal="product-2">X</span>
+                <h1>IMAC 27'</h1>
+                <img src="images/divider_green.png" alt="" class="divider">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="single-item">
+                    <div><img src="images/product_02_preview_01.jpg" alt="" class="product-img"></div>
+                    <div><img src="images/product_02_preview_02.jpg" alt="" class="product-img"></div>
+                    <div><img src="images/product_02_preview_03.jpg" alt="" class="product-img"></div>
+                </div>
+                <div>
+                    <div class="device">
+                        <h3>Specifications:</h3>
+                        <ul>
+                            <li><strong>Model:</strong> iMac 27"</li>
+                            <li><strong>Display:</strong> 27 inches, Retina 5K display</li>
+                            <li><strong>Resolution:</strong> 5120 x 2880 pixels</li>
+                            <li><strong>Processor:</strong> Apple M1 Chip or Intel Core i5/i7 (10th generation)</li>
+                            <li><strong>Memory:</strong> 8 GB (configurable up to 64 GB)</li>   
+                            <li><strong>Storage:</strong> SSD 256 GB (up to 8 TB), Fusion Drive options</li>
+                            <li><strong>Graphics:</strong> AMD Radeon Pro 5300 or 5500 XT</li>
+                            <li><strong>Weight:</strong> 20.8 pounds (9.4 kg)</li>
+                            <li><strong>Ports:</strong> Two Thunderbolt 3 (USB-C), four USB-A, SDXC card slot</li>
+                            <li><strong>Colors Available:</strong> Silver, Space Gray</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>₱49,999</h2>
+                        <button class="buynow" data-product="IMAC 27'" data-price="49999" data-qty="product-2-qty">BUY NOW</button>
+                        <input type="number" id="product-2-qty" value="1" max="3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="product-3" class="modal">
+        <div class="product modal-content">
+            <div class="content">
+                <span class="close-modal" data-modal="product-3">X</span>
+                <h1>MACBOOK PRO 13'</h1>
+                <img src="images/divider_green.png" alt="" class="divider">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="single-item">
+                    <div><img src="images/product_03_preview_01.jpg" alt="" class="product-img"></div>
+                    <div><img src="images/product_03_preview_02.jpg" alt="" class="product-img"></div>
+                    <div><img src="images/product_03_preview_03.jpg" alt="" class="product-img"></div>
+                </div>
+                <div>
+                    <div class="device">
+                        <h3>Specifications:</h3>
+                        <ul>
+                            <li><strong>Model:</strong> MacBook Pro 13"</li>
+                            <li><strong>Display:</strong> 13.3 inches, Retina display</li>
+                            <li><strong>Resolution:</strong> 2560 x 1600 pixels</li>
+                            <li><strong>Processor:</strong> Apple M1 Chip or Intel Core i5 (10th generation)</li>
+                            <li><strong>Memory:</strong> 8 GB (configurable to 16 GB)</li>
+                            <li><strong>Storage:</strong> SSD 256 GB (configurable up to 1 TB)</li>
+                            <li><strong>Graphics:</strong> Integrated Intel Iris Plus Graphics</li>
+                            <li><strong>Battery Life:</strong> Up to 20 hours</li>
+                            <li><strong>Weight:</strong> 3.0 pounds (1.4 kg)</li>
+                            <li><strong>Ports:</strong> Two Thunderbolt 3 (USB-C), 3.5 mm headphone jack</li>
+                            <li><strong>Colors Available:</strong> Silver, Space Gray</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>₱36,999</h2>
+                        <button class="buynow" data-product="MACBOOK PRO 13'" data-price="36999" data-qty="product-3-qty">BUY NOW</button>
+                        <input type="number" id="product-3-qty" value="1" max="3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <section id="subscribe" class="section-seven snow-bg">
+        <span class="clouds"><img src="images/section_footer.png" alt=""></span>
+        <div class="content">
+            <h1>WANT MORE? SUBSCRIBE!</h1>
+            <img src="images/divider_white.png" alt="" class="divider">
+            <p>And get latest amazing offers first</p>
+            <form action="index.html">
+                <input type="text" name="" id="" placeholder="Enter Name">
+                <input type="email" name="" id="" placeholder="Enter Email">
+                <input type="submit">
+            </form>
+        </div>
+    </section> -->
+    <section id="contacts" class="section-eight cloud-bg">
+        <div class="content">
+            <h1>ARE YOU INTERESTED?</h1>
+            <img src="images/divider_green.png" alt="" class="divider">
+            <p>Get in touch with us</p>
+            <div class="contact">
+                <div>
+                    <img src="images/icon_mail_01.png" alt="">
+                    <P>Sales: <b>sale@supersale.com</b></P>
+                    <P>Support: <b>support@supersale.com</b></P>
+                </div>
+                <div>
+                    <img src="images/icon_call_01.png" alt="">
+                    <P>Sales: <b>+1 123 456 7890</b></P>
+                    <P>Support: <b>+1 123 456 9578</b></P>
+                </div>
+                <div>
+                    <img src="images/icon_address_01.png" alt="">
+                    <P>Office: <b>Unit C2, St.Vincent's Trading Est.,<br>Feeder Roadm, London, UK</b></P>
+                </div>
+            </div>
+            <div class="socials">
+                <a href=""><img src="images/icon_fb_01.png" alt="" title="Facebook"></a>
+                <a href=""><img src="images/icon_twitter_01.png" alt="" title="Twitter"></a>
+                <a href=""><img src="images/icon_gplus_01.png" alt="" title="Google+"></a>
+                <a href=""><img src="images/icon_instagram_01.png" alt="" title="Instagram"></a>
+                <a href=""><img src="images/icon_pinterest_01.png" alt="" title="Pinterest"></a>
+                <a href=""><img src="images/icon_tumblr_01.png" alt="" title="Tumblr"></a>
+                <a href=""><img src="images/icon_vimeo_01.png" alt="" title="Vimeo"></a>
+            </div>
+            <footer>
+                <p>© CohCoh's - Christmas Sale<br>All right reserved.</p>
+            </footer>
+        </div>
+    </section>
+    <div id="notifications"></div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+            $('.single-item').slick({
+                dots: true,
+                arrows: true
+            });
+        });
+    </script> -->
+</body>
+</html>
